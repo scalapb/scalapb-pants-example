@@ -1,0 +1,9 @@
+jvm_binary(
+    name='client',
+    source='Main.scala',
+    main='example.grpc.Main',
+    dependencies=[
+        'src/protos:service_proto',
+        '3rdparty/jvm:grpc-netty'
+    ],
+)
